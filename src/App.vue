@@ -1,15 +1,21 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <Main />
   </div>
 </template>
 <script>
+
+import Main from './components/Main'
+
 export default {
   name : 'app',
+  components : {
+    Main
+  },
 
 }
 </script>
 
-<style>
+<style lang = 'scss'>
 
 </style>

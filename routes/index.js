@@ -9,6 +9,7 @@ import signUp from '../src/components/SignUp'
 import Ticketing from '../src/components/Ticketing'
 import userValidate from '../src/components/userValidate'
 import movieList from '../src/components/movieList'
+import myMovie from '../src/components/myMovie'
 
 Vue.use(VueRouter);
 
@@ -43,6 +44,10 @@ export const router = new VueRouter({
       {
         path : '/userValidation',
         component : userValidate
+      },
+      {
+        path : '/myMovie',
+        component : myMovie
       },
       {
         path : '/signUp',
