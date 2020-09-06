@@ -1,16 +1,18 @@
 <template>
-    <div id='to'>
-        <p id ="top">
+    <div id='main'>
+        <div class ="top">
         <router-link to='/' class="to__main" text-decoration:none>Main</router-link>
         <router-link to ='/Login' class="to__login">로그인</router-link>
-        </p>
-        <p id = "Menu">
-        <router-link to='/MovieList' class='to__movieList'>영화 조회</router-link>
-        <router-link to = '/Ticketing' class='to__ticketing'>영화 예매</router-link>
-        <router-link to='/myMovie' class='to__myMovie'>예매 내역 조회</router-link>
-        <router-link to = '/myPage' class='to__myPage'>마이페이지</router-link>
-        </p>
-        <router-view></router-view>
+        </div>
+        <div class ="menu">
+            <router-link class="to__movieList" to='/MovieList'>영화 조회</router-link>
+            <router-link class="to__Ticketing" to='/Ticketing'>영화 예매</router-link>
+            <router-link class="to__myMovie" to='/myMovie'>예매 내역 조회</router-link>
+            <router-link class="to__myPage" to='/myPage'>마이페이지</router-link>
+        </div>
+        <div class="routerView">
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 
